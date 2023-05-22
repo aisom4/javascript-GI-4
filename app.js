@@ -66,3 +66,32 @@ let button2 = document.getElementById("button2");
 function bodyChange(color) {
   document.body.className = color;
 }
+
+// *VERY HARD QUESTION: You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+// Hint:  Sudo code this problem. Focus on breaking the problem down into steps  Use functions, arrays and logical operators.  Do not have anyone give you the answer or solve this problem for you.
+// Example 1:
+// Input: coins = [1, 2, 5], amount = 11
+// Output: 3
+// Explanation: 11 = 5 + 5 + 1
+// Example 2:
+// Input: coins = [2], amount = 3
+// Output: -1
+
+//MY STEPS TO TRY SOLVE THE PROBLEM---------------------------------------
+//create a function
+// let that function accept an array and a number as a second parameter
+// functions needs to calculate the fewest number of coins to come up with that number
+// if those coins do not calculate the output amount return -1
+function coins(arr, number) {
+  //arr = the coins ---- number = output
+  let coinCount = 0; // an empty varible to keep count of the coins used
+  for (let i = 0; i < arr.length; i++) {
+    //creating a for loop to go through the coins array
+    coinCount += arr[i];
+  }
+  return coinCount;
+}
+// I know that I will have to check to see if each coin denomination can go inside of the output amount.
+// i know i will need a conditional to test if the array numbers can make up the output
+//if the coin can be apart of the final amount we can add to the coin count
+console.log(coins([1, 2, 3, 4, 5], 15));
