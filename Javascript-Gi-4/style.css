@@ -1,0 +1,29 @@
+body {
+  background-color: papayawhip;
+  color: darkorange;
+  text-align: center;
+}
+
+#button1 {
+  background-color: hotpink;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+#button2 {
+  background-color: snow;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: snow;
+}
